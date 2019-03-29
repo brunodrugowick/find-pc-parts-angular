@@ -422,8 +422,8 @@ export const RESULT: SearchResult[] = [
 "price": 
 
 {
-"promotional_price": "à vista R$2.965,92à vista R$3.212,04",
-"regular_price": "R$3.370,36R$3.650,05"
+"promotional_price": "à vista R$2.965,92",
+"regular_price": "R$3.370,36"
 },
 "photo": "https://d39v9ng0y2s2rm.cloudfront.net/catalog/product/cache/89197d5dca145b4b8bae0bd39c25e653/1/4/14768-ab01.jpg"
 },
@@ -434,8 +434,8 @@ export const RESULT: SearchResult[] = [
 "price": 
 
 {
-"promotional_price": "à vista R$2.988,86à vista R$3.438,00",
-"regular_price": "R$3.396,43R$3.906,82"
+"promotional_price": "à vista R$2.988,86",
+"regular_price": "R$3.396,43"
 },
 "photo": "https://d39v9ng0y2s2rm.cloudfront.net/catalog/product/cache/89197d5dca145b4b8bae0bd39c25e653/1/5/15152-002_1.jpg"
 },
@@ -501,8 +501,8 @@ export const RESULT: SearchResult[] = [
 "price": 
 
 {
-"promotional_price": "à vista R$3.199,86à vista R$3.547,28",
-"regular_price": "R$3.636,20R$4.031,00"
+"promotional_price": "à vista R$3.199,86",
+"regular_price": "R$3.636,20"
 },
 "photo": "https://d39v9ng0y2s2rm.cloudfront.net/catalog/product/cache/89197d5dca145b4b8bae0bd39c25e653/d/r/dragoonintelgtx-01_2.jpg"
 },
@@ -592,8 +592,8 @@ export const RESULT: SearchResult[] = [
 "price": 
 
 {
-"promotional_price": "à vista R$3.439,90à vista R$3.785,44",
-"regular_price": "R$3.908,98R$4.301,64"
+"promotional_price": "à vista R$3.439,90",
+"regular_price": "R$3.908,98"
 },
 "photo": "https://d39v9ng0y2s2rm.cloudfront.net/catalog/product/cache/89197d5dca145b4b8bae0bd39c25e653/d/r/dragoonintelgtx-02_4.jpg"
 },
@@ -604,8 +604,8 @@ export const RESULT: SearchResult[] = [
 "price": 
 
 {
-"promotional_price": "à vista R$3.469,85à vista R$3.823,20",
-"regular_price": "R$3.943,01R$4.344,55"
+"promotional_price": "à vista R$3.469,85",
+"regular_price": "R$3.943,01"
 },
 "photo": "https://d39v9ng0y2s2rm.cloudfront.net/catalog/product/cache/89197d5dca145b4b8bae0bd39c25e653/1/2/12189---01_1_.jpg"
 },

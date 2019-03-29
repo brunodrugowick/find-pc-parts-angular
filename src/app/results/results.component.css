@@ -1,7 +1,12 @@
-.name {
-  background-color: lightsteelblue !important;
+.selected {
+  background-color: steelblue !important;
   color: black;
-  cursor: auto;
+}
+.prices {
+  color: black;
+}
+.name {
+  cursor: pointer;
   position: relative;
   left: 0;
   background-color: #EEE;

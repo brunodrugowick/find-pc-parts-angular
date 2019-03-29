@@ -1,8 +1,22 @@
 <ul class="results">
   <table>
     <tr *ngFor="let result of results">
-      <table><tr class="name"><td>{{result.name}}</td></tr></table>
-      <table><tr class="link"><td>{{result.link}}</td></tr></table>
+      <table width="100%" 
+        (click)="onClickTitle(result)"
+        [class.selected]="selectedResult === result">
+        <tr class="name"><td>{{result.name}}</td></tr>
+      </table>
+      <table width="100%" *ngIf="selectedResult === result">
+        <tr width="100%" class="prices">
+          <td width="30%">Regular Price: {{result.price.regular_price}}</td>
+          <td width="30%">Promotional Price: {{result.price.promotional_price}}</td>
+          <td width="30%">
+            <a href="{{result.link}}" target="_blank">
+              <table width="100%"><tr class="link"><td>Visit Website >></td></tr></table>
+            </a>
+          </td>
+        </tr>
+      </table>
     </tr>
     
   </table>

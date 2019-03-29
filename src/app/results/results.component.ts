@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RESULT } from '../mock-search-result';
+import { SearchResult } from '../searchresult';
 
 @Component({
   selector: 'app-results',
@@ -13,6 +14,11 @@ export class ResultsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  selectedResult: SearchResult;
+  onClickTitle(searchResult: SearchResult): void {
+    this.selectedResult = searchResult;
   }
 
 }
