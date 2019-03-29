@@ -1,0 +1,24 @@
+.name {
+  background-color: lightsteelblue !important;
+  color: black;
+  cursor: auto;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+.link {
+  background-color: white !important;
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+  font-size: smaller;
+}
