@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { RESULT } from '../mock-search-result';
 import { SearchResult } from '../searchresult';
+import { SearchService } from '../search.service';
 
 @Component({
   selector: 'app-results',
@@ -9,11 +9,17 @@ import { SearchResult } from '../searchresult';
 })
 export class ResultsComponent implements OnInit {
 
-  results = RESULT;
+  results: SearchResult[];
 
-  constructor() { }
+  constructor(private searchService: SearchService) { }
 
   ngOnInit() {
+    this.getResults();
+  }
+
+  getResults(): void {
+    this.searchService.getResults()
+      .subscribe(results => this.results = results);
   }
 
   selectedResult: SearchResult;

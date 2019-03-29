@@ -7,17 +7,22 @@ import { SearchBoxComponent } from './search-box/search-box.component';
 import { ResultsComponent } from './results/results.component';
 
 import { FormsModule } from '@angular/forms';
+import { ResultDetailsComponent } from './result-details/result-details.component';
+
+import { HttpClientModule } from '@angular/common/http'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchBoxComponent,
-    ResultsComponent
+    ResultsComponent,
+    ResultDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
