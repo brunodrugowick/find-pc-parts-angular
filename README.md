@@ -1,6 +1,16 @@
-# FindPcPartsAngular
+# Find PC Parts - Angular Version
+
+I just saw [this](https://github.com/ViniciusLovato/autoblog-search) and thought I could consume it using Angular.
+The only reason I'm using Angular for this is because that's something I want to learn, so the idea is to use the official [Tour of the Hero](https://angular.io/tutorial) to make everything.
+And the reason I copied an ideia from Vini Lovato is that it's difficult to have cool ideas and this looks like a cool (and public) idea.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
+
+## Prereq
+
+You need to configure an instance of the [autoblog-search](https://github.com/ViniciusLovato/autoblog-search) on the properties (TODO - for now just run on the port 3000).
+
+But for now there's a mock response on the app.
 
 ## Development server
 
