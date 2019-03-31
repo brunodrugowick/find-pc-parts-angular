@@ -10,8 +10,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 You need to configure an instance of the [autoblog-search](https://github.com/ViniciusLovato/autoblog-search) on the properties (TODO - for now just run on the port 3000).
 
-But for now there's a mock response on the app.
-
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
