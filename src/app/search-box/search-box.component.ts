@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-search-box',
@@ -7,11 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchBoxComponent implements OnInit {
 
-  search = 'Surface Pro 6';
+  @Output() typeOnSearchBoxEvent = new EventEmitter<string>();
+  @Output() clickOnSearchButtonEvent = new EventEmitter();
+  search = '';
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSearchBoxType() {
+    this.typeOnSearchBoxEvent.emit(this.search);
+  }
+
+  onSearchButtonClick() {
+    this.clickOnSearchButtonEvent.emit();
   }
 
 }

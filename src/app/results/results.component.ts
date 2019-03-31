@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { SearchResult } from '../searchresult';
 import { SearchService } from '../search.service';
 
@@ -9,22 +9,25 @@ import { SearchService } from '../search.service';
 })
 export class ResultsComponent implements OnInit {
 
-  results: SearchResult[];
-
   constructor(private searchService: SearchService) { }
+
+  results: SearchResult[];
+  @Input() queryString: string;
+  selectedResult: SearchResult;
 
   ngOnInit() {
     this.getResults();
   }
 
   getResults(): void {
-    this.searchService.getResults()
+    if (this.queryString === '') {
+      return;
+    }
+    this.searchService.getResults(this.queryString)
       .subscribe(results => this.results = results);
+    // console.log("Subscribed to endpoint.")
   }
-
-  selectedResult: SearchResult;
   onClickTitle(searchResult: SearchResult): void {
     this.selectedResult = searchResult;
   }
-
 }

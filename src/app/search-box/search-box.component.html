@@ -1,4 +1,9 @@
-<form action="/">
-  <input [(ngModel)]="search" type="text" name="search" placeholder="{{search}}">
-  <input type="submit" value="Search">
-</form>
+<input class="search-box"
+  [(ngModel)]="search" 
+  type="text" 
+  name="search" 
+  placeholder="{{search}}"
+  (keydown.enter)="onSearchButtonClick()"
+  (keyup)="onSearchBoxType()"
+  >
+  <div class="hint">Enter to Search</div>
