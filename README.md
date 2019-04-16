@@ -6,6 +6,10 @@ And the reason I copied an ideia from Vini Lovato is that it's difficult to have
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
 
+## Screenshot
+
+![Screenshot](screenshot.png)
+
 ## Prereq
 
 You need to configure an instance of the [autoblog-search](https://github.com/ViniciusLovato/autoblog-search) on the properties (TODO - for now just run on the port 3000).
