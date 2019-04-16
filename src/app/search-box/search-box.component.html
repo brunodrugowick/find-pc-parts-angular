@@ -1,9 +1,22 @@
-<input class="search-box"
-  [(ngModel)]="search" 
-  type="text" 
-  name="search" 
-  placeholder="{{search}}"
-  (keydown.enter)="onSearchButtonClick()"
-  (keyup)="onSearchBoxType()"
-  >
-  <div class="hint">Enter to Search</div>
+<div class="row">
+  <div class="col-8">
+      <input class="form-control" 
+        [(ngModel)]="search" 
+        type="text" 
+        name="search" 
+        placeholder="{{search}}"
+        (keydown.enter)="onSearchButtonClick()"
+        (keyup)="onSearchBoxType()"
+        data-toggle="tooltip" 
+        data-placement="top" 
+        title="Hit Enter to Search"
+      >
+  </div>
+  <div class="col-4">
+      <button type="button"
+        class="btn btn-primary"
+        (click)="onSearchButtonClick()">
+        Search Best Prices
+    </button>
+  </div>
+</div>
