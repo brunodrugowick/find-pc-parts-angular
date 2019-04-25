@@ -14,6 +14,6 @@ export class SearchService {
   constructor(private http: HttpClient) { }
 
   getResults(queryString: string): Observable<SearchResult[]> {
-    return this.http.get<SearchResult[]>('http://localhost:3000/' + queryString);
+    return this.http.get<SearchResult[]>('https://autoblog-search.herokuapp.com/' + queryString);
   }
 }
