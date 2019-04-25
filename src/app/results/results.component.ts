@@ -5,7 +5,8 @@ import { SearchService } from '../search.service';
 @Component({
   selector: 'app-results',
   templateUrl: './results.component.html',
-  styleUrls: ['./results.component.css']
+  styleUrls: ['./results.component.css'],
+  styles: ['table { cursor: pointer; }']
 })
 export class ResultsComponent implements OnInit {
 
